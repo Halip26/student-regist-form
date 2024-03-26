@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clear Database!</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://static.zohocdn.com/forms/images/formsicon.9f2e4a123b5b37ecd1e026b34f590968.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Clear Database</h1>
+      <p>Are you sure you want to clear the database?</p>
+      <form method="post">
+        <input type="submit" value="Yes, clear database" />
+      </form>
+    </div>
+  </body>
+</html>

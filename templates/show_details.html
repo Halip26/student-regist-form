@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Showing Student Details</title>
+    <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://static.zohocdn.com/forms/images/formsicon.9f2e4a123b5b37ecd1e026b34f590968.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <h1>Student Details:</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Date Of Birth</th>
+          <th>Gender</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for student in students %}
+        <tr>
+          <td>{{ student.Name }}</td>
+          <td>{{ student.Age }}</td>
+          <td>{{ student.dob }}</td>
+          <td>{{ student.Gender }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <a href="/"><button type="submit">Add new Student Details</button></a>
+    <a href="/clear_database"><button type="submit">Clear Database</button></a>
+  </body>
+</html>
