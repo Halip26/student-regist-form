@@ -26,15 +26,11 @@ h1 {
 }
 
 input[type="text"],
-input[type="password"],
 input[type="date"],
-input[type="datetime"],
-input[type="email"],
 input[type="number"],
-input[type="search"],
-input[type="tel"],
 input[type="time"],
-input[type="url"],
+input[type="email"],
+input[type="password"],
 textarea,
 select {
   background: #ffffff1a;
@@ -47,13 +43,13 @@ select {
   width: 100%;
   background-color: #e8eeef;
   color: #8a97a0;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.031) inset;
+  box-shadow: 0 1px 0 #00000008 inset;
   margin-bottom: 30px;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 0 4px 8px 0;
+  margin: 0 4px 80x 0;
 }
 
 select {
@@ -73,7 +69,7 @@ button {
   width: 50%;
   border: 1px solid #3ac162;
   border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.102) inset;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
   margin-bottom: 10px;
   cursor: pointer;
   margin-left: 25%;
@@ -134,9 +130,11 @@ td {
   padding: 8px;
   border: 1px solid #4caf50;
 }
+
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
 th {
   background-color: #4caf50;
   color: white;
@@ -178,9 +176,11 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
+  transition: 0.5s ease-in-out;
   background-color: #45a049;
 }
 
+/* responsive website */
 @media screen and (min-width: 480px) {
   form {
     max-width: 700px;
