@@ -13,13 +13,13 @@ class students(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     Name = db.Column(db.String(100))
     Age = db.Column(db.Integer)
-    dob = db.Column(db.String(100))
+    Birthday = db.Column(db.String(100))
     Gender = db.Column(db.String(10))
 
-    def __init__(self, name, age, dob, gender):
+    def __init__(self, name, age, birthday, gender):
         self.Name = name
         self.Age = age
-        self.dob = dob
+        self.Birthday = birthday
         self.Gender = gender
 
 
